@@ -11,6 +11,8 @@
 }
 
 $blauw: #396EC6;
+$border-c: #ACACAC;
+$light-blue: #DCE9FF;
 
 html, body {
   margin: 0;
@@ -34,7 +36,14 @@ html, body {
   }
 }
 
+.nav ul li:hover{
+  text-decoration: underline $blauw;
+  cursor: pointer;
+}
+
+
 .home{
+  height: 90vh;
   h1{
     margin-top: 5em;
     font-weight: bold;
@@ -63,6 +72,40 @@ html, body {
 .secondary{
   border-color: black;
   background-color: white;
+}
+
+.home-title{
+  font-weight: bold;
+  text-decoration: underline $blauw;
+  margin-bottom: 2em;
+}
+
+.news-card{
+  padding: 10px;
+
+  .news-card-info{
+    border: solid 1px $border-c;
+    border-radius: 0 0 5px 5px;
+    padding: 5px;
+  }
+
+  img{
+    border-radius: 5px 5px 0 0;
+  }
+  h3{
+    font-weight: bold;
+    font-size: 20px;
+  }
+}
+
+
+
+.sponsors{
+  height: 70vh;
+  background-color: $light-blue;
+  h2{
+    margin-top: 2em;
+  }
 }
 
 

@@ -1,7 +1,9 @@
 import React from 'react'
+import NewsHome from './NewsHome'
 
 function Home() {
     return (
+        <div>
         <div className="home row">
             <div className="col-6">
             <h1>Welkom bij Olympia Wijgmaal</h1>
@@ -13,6 +15,7 @@ function Home() {
             <div className="col-6">
 
             </div>
+        </div>
         </div>
     )
 }
