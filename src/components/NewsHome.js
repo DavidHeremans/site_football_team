@@ -3,12 +3,14 @@ import NewsCard from './NewsCard'
 
 function NewsHome({articles}) {
     return (
-        <div className="row">
+        <div className="row news-home">
             <h2 className="home-title">Laatste Nieuws</h2>
            
-            {articles.map((article, index) => (
+            {articles.slice(0,3).map((article, index) => (
             <NewsCard key={index} article={article} />
              ))}
+
+             <input type="button" value="Meer nieuws" className="primary" />
         </div>
     )
 }

@@ -4,10 +4,19 @@ import ReactDOM from 'react-dom';
 import './index.scss';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { BrowserRouter,  Routes,  Route } from 'react-router-dom';
+import Club from './components/routes/Club';
+import Teams from './components/routes/Teams';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter>
+    <Routes>
+    <Route path="/" element={<App />} />
+      <Route path="club" element={<Club />} />
+      <Route path="teams" element={<Teams />} />
+      </Routes>
+      </BrowserRouter>
   </React.StrictMode>,
   document.getElementById('root')
 );

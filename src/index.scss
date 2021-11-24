@@ -29,16 +29,24 @@ html, body {
   ul{
     list-style: none;
 
-    li{
+   li{
+      a{
+        text-decoration: none;
+        color: black;
+      }
       display: inline;
       margin: 0 2em;
     }
   }
 }
 
-.nav ul li:hover{
-  text-decoration: underline $blauw;
+.nav ul li a:hover{
+  text-decoration: underline $blauw !important;
   cursor: pointer;
+}
+
+.dropdown:hover>.dropdown-menu {
+ display: block;
 }
 
 
@@ -63,6 +71,8 @@ html, body {
   }
 }
 
+
+
 .primary{
   border-color: $blauw;
   background-color: $blauw;
@@ -77,7 +87,19 @@ html, body {
 .home-title{
   font-weight: bold;
   text-decoration: underline $blauw;
-  margin-bottom: 2em;
+  margin-bottom: 1em;
+}
+
+.news-home{
+  margin-bottom: 10em;
+  input{
+    margin-top: 1em;
+    width: 170px;
+    height: 40px;
+    border-radius: 0;
+    border: solid 1px;
+    font-size: 16px;
+  }
 }
 
 .news-card{
@@ -98,13 +120,15 @@ html, body {
   }
 }
 
-
-
 .sponsors{
-  height: 70vh;
+  padding: 10em 0;
   background-color: $light-blue;
-  h2{
-    margin-top: 2em;
+
+  img {
+    display: block;
+    margin:auto;
+   width: 50%;
+   text-align: center;
   }
 }
 
