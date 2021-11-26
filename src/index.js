@@ -5,8 +5,9 @@ import './index.scss';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter,  Routes,  Route } from 'react-router-dom';
-import Club from './components/routes/Club';
+import Club from './components/club/Club';
 import Teams from './components/routes/Teams';
+import Missie from './components/club/Missie';
 
 ReactDOM.render(
   <React.StrictMode>
@@ -15,6 +16,7 @@ ReactDOM.render(
     <Route path="/" element={<App />} />
       <Route path="club" element={<Club />} />
       <Route path="teams" element={<Teams />} />
+      <Route path="missie" element={<Missie />} />
       </Routes>
       </BrowserRouter>
   </React.StrictMode>,
