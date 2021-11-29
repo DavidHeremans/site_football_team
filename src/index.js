@@ -8,6 +8,7 @@ import { BrowserRouter,  Routes,  Route } from 'react-router-dom';
 import Club from './components/club/Club';
 import Teams from './components/routes/Teams';
 import Missie from './components/club/Missie';
+import Contact from './components/Contact';
 
 ReactDOM.render(
   <React.StrictMode>
@@ -17,6 +18,7 @@ ReactDOM.render(
       <Route path="club" element={<Club />} />
       <Route path="teams" element={<Teams />} />
       <Route path="missie" element={<Missie />} />
+      <Route path="contact" element={<Contact />} />
       </Routes>
       </BrowserRouter>
   </React.StrictMode>,

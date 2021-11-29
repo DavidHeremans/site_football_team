@@ -10,6 +10,7 @@ function Club() {
             <h2>Algemene Info</h2>
             <div className="col-6">
                 <table className="table-info" width="100%">
+                    <tbody>
                     <tr>
                         <td>Adres</td>
                         <td> <p>Pastoor Bellonstraat 29</p> 
@@ -32,6 +33,7 @@ function Club() {
                         <td>BTW-nummer</td>
                         <td>430.469.469</td>
                     </tr>
+                    </tbody>
                 </table>
             </div>
 

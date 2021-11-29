@@ -33,16 +33,33 @@ html, body {
       a{
         text-decoration: none;
         color: black;
+        position: relative;
       }
       display: inline-block;
       margin: 0 2em;
+      position: relative;
     }
   }
 }
 
-.list-item a:hover, .list-item:hover{
-  text-decoration: underline $blauw !important;
+
+.list-item a::after, .list-item::after {
   cursor: pointer;
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: $blauw;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.list-item a:hover::after, .list-item:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }
 
 .dropdown:hover>.dropdown-menu {
@@ -91,6 +108,14 @@ html, body {
 .secondary{
   border-color: black;
   background-color: white;
+}
+
+.primary:hover{
+  text-decoration: underline rgb(219, 219, 219);
+}
+
+.secondary:hover{
+  text-decoration: underline $blauw;
 }
 
 .home-title{
@@ -156,5 +181,18 @@ html, body {
 
 .missie{
   margin: 2em auto;
+}
+
+.contact form{
+  padding: 1em 5em;
+  div{
+    margin: 2em 0;
+  }
+   input, textarea{
+    width: 100%;
+  }
+  .primary{
+    width: 170px;
+  }
 }
 
