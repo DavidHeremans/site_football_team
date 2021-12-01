@@ -7,7 +7,7 @@ function Home() {
     return (
         <div>
         <div className="home row">
-            <div className="col-lg-6 col-sm-10">
+            <div className="col-lg-8 col-sm-10">
             <h1>Welkom bij Olympia Wijgmaal</h1>
             <p>Voetbal op een ander niveau</p>
 
@@ -16,7 +16,7 @@ function Home() {
                 navigate("/contact");
           }} />
             </div>
-            <div className="col-6">
+            <div className="col-4">
 
             </div>
         </div>

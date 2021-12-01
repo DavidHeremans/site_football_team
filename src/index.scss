@@ -49,12 +49,12 @@ html, body {
   position: absolute;
   width: 100%;
   transform: scaleX(0);
-  height: 2px;
+  height: 1px;
   bottom: 0;
   left: 0;
   background-color: $blauw;
   transform-origin: bottom right;
-  transition: transform 0.25s ease-out;
+  transition: transform 0.25s ease-in-out;
 }
 
 .list-item a:hover::after, .list-item:hover::after {
@@ -103,19 +103,26 @@ html, body {
   border-color: $blauw;
   background-color: $blauw;
   color: white;
+  transition: 0.2s ease-out;
 }
 
 .secondary{
   border-color: black;
   background-color: white;
+  transition: 0.2s ease-out;
 }
 
 .primary:hover{
-  text-decoration: underline rgb(219, 219, 219);
+  background-color: white;
+  color: $blauw;
+  transition: 0.2s ease-out;
 }
 
+
 .secondary:hover{
-  text-decoration: underline $blauw;
+  background-color: black;
+  color: white;
+  transition: 0.2s ease-out;
 }
 
 .home-title{
@@ -181,6 +188,13 @@ html, body {
 
 .missie{
   margin: 2em auto;
+  p{
+    margin: 1em 0;
+  }
+
+  ul li{
+    margin: 0.5em 0;
+  }
 }
 
 .contact form{

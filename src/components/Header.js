@@ -6,7 +6,7 @@ function Header() {
     return (
         <div className="row header">
             <div className="col-3">
-                <img src={logo} alt="Logo Wijgmaal" width="30%"/>
+             <Link to="/">   <img src={logo} alt="Logo Wijgmaal" width="30%"/></Link>
             </div>
             <div className="col-9">
                 <nav className="nav navbar navbar-expand-xl">
@@ -60,6 +60,9 @@ function Header() {
                         </div>
                         <div className="list-item">
                             <Link to="/jeugd">Jeugd</Link>
+                        </div>
+                        <div className="list-item">
+                            <Link to="/inschrijven">Inschrijven</Link>
                         </div>
                         <div className="list-item">
                             <Link to="/tickets">Tickets</Link>
