@@ -9,6 +9,7 @@ import Club from './components/club/Club';
 import Teams from './components/routes/Teams';
 import Missie from './components/club/Missie';
 import Contact from './components/Contact';
+import Historiek from './components/club/Historiek';
 
 ReactDOM.render(
   <React.StrictMode>
@@ -16,6 +17,7 @@ ReactDOM.render(
     <Routes>
     <Route path="/" element={<App />} />
       <Route path="club" element={<Club />} />
+      <Route path="historiek" element={<Historiek />} />
       <Route path="teams" element={<Teams />} />
       <Route path="missie" element={<Missie />} />
       <Route path="contact" element={<Contact />} />

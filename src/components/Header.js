@@ -37,7 +37,7 @@ function Header() {
                             <div className="dropdown-menu" aria-labelledby="dropClub">
                                 <Link className="dropdown-item" to="/club">Algemene Info</Link>
                                 <Link className="dropdown-item" to="/missie">Missie en Visie</Link>
-                                <Link className="dropdown-item" to="/club">Historiek</Link>
+                                <Link className="dropdown-item" to="/historiek">Historiek</Link>
                             </div>
 
                         </div>
